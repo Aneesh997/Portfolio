@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <title>Contact-Portfolio</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<nav>
+
+    <div class="nav-title">
+        The Folio
+      </div>
+      <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="About Me.html">About Me</a>
+    <a href="Education.html">Education</a>
+    <a href="My Works.html">My works</a>
+    <a href="Contact.html">Contact</a>
+    </div>
+</nav>
+<body>
+    <video autoplay muted loop id="background">
+        <source src="YColorful Gradient Blur Video Background.mp4" type="video/mp4">
+      </video>
+      <br>
+      <br>
+      <h1>Contact Me</h1>
+      <br>
+      <br>
+      <main>
+        <form>
+            <label >Name:</label>
+            <input type="text" id="name" name="name" required>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" >
+    
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+    
+            <button id="Contact"type="submit"><center>Submit</center></button>
+        </form>
+    </main>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    <script>
+    let name;
+    let email;
+    let message;
+    document.getElementById("Contact").onclick=function(){
+        name=document.getElementById("name").value;
+        console.log("Name:",name); 
+        
+        email=document.getElementById("email").value;
+        console.log("Email:",email);
+    
+        message=document.getElementById("message").value;
+        console.log("Message:",message);
+    
+        window.alert("Thank you for your feedback!");
+    }
+    </script>
+    <br>
+    <br>
+
+      <footer>
+        <a href="https://www.linkedin.com/in/aneesh-s-r-52619b264/">LinkedIn</a>
+        <a href="https://www.instagram.com/__.aneeshhhh.__/">Instagram</a>
+    </footer>
+    
+</body>
+</html>      

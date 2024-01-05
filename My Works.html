@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <title>My Works-Portfolio</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<nav>
+
+    <div class="nav-title">
+        The Folio
+      </div>
+      <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="About Me.html">About Me</a>
+    <a href="Education.html">Education</a>
+    <a href="My Works.html">My works</a>
+    <a href="Contact.html">Contact</a>
+    </div>
+</nav>
+<body>
+    <video autoplay muted loop id="background">
+        <source src="YColorful Gradient Blur Video Background.mp4" type="video/mp4">
+      </video>
+      <br>
+      <br>
+      <br>
+
+<h1>My Works</h1>
+<br>
+<br>
+<br>
+ <!-- Your first rounded container with slideshow -->
+<div class="rounded-container1">
+    <div class="text-container1">
+        <p>
+            "Circutrix's innovative project, 'Lights,' showcases a groundbreaking prototype—anti-sleeping alarm glasses designed for safe highway driving. The smart glasses employ advanced sensors to detect eyelid closure, triggering a timely beep to alert the driver, preventing potential accidents due to drowsiness. This cutting-edge technology addresses a critical safety concern on highways, providing a real-time solution to mitigate the risks associated with driver fatigue. The Circutrix team's dedication to creating a practical and impactful device underscores their commitment to leveraging technology for enhancing road safety and well-being."
+        </p>
+    </div>
+    <div class="slideshow-container" id="slideshow1">
+        <div class="slide">
+            <img src="DSCA1.jpg" alt="Image 1.1">
+        </div>
+        <div class="slide">
+            <img src="DSCA2.jpg" alt="Image 1.2">
+        </div>
+        <!-- Add more slides as needed -->
+    </div>
+</div>
+<br>
+<br>
+<br>
+<!-- Your second rounded container with slideshow -->
+
+<br>
+
+<br>
+<br>
+<div class="rounded-container-right">
+    <div class="text-container-right">
+        <p>
+            Embark on an extraordinary journey through the cosmos with our immersive project on Stargazing and Galactic Exploration. Our website, crafted with HTML, CSS, and JavaScript, invites you to explore the marvels of the universe. Utilizing cutting-edge technology, our computer system enhances celestial experiences, offering real-time data, interactive sky maps, and detailed astronomical insights. Whether you're an astronomer or a novice, our user-friendly interface makes stargazing a captivating and educational adventure. 
+        </p>
+    </div>
+    <div class="slideshow-container" id="slideshow2">
+        <div class="slide">
+            <img src="i1.png" alt="Image 3.1">
+        </div>
+        <div class="slide">
+            <img src="i2.png" alt="Image 3.2">
+        </div>
+        <div class="slide">
+            <img src="i3.png" alt="Image 3.3">
+        </div>
+        <!-- Add more slides as needed -->
+    </div>
+</div>
+<br>
+<br>
+<br>
+
+
+<footer>
+    <a href="https://www.linkedin.com/in/aneesh-s-r-52619b264/">LinkedIn</a>
+    <a href="https://www.instagram.com/__.aneeshhhh.__/">Instagram</a>
+</footer>
+
+<script>
+    function startSlideshow(slideshowId) {
+        let slideIndex = 0;
+        const slideshow = document.getElementById(slideshowId);
+        const slides = slideshow.getElementsByClassName("slide");
+
+        function showSlides() {
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+
+            slideIndex++;
+
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+
+            slides[slideIndex - 1].style.display = "block";
+
+            setTimeout(showSlides, 2000); // Change slide every 2 seconds (adjust as needed)
+        }
+
+        showSlides();
+    }
+
+    startSlideshow("slideshow1");
+    startSlideshow("slideshow2");
+    startSlideshow("slideshow3");
+    startSlideshow("slideshow4");
+    // Add more calls as needed for additional slideshows
+</script>
+
+</body>
+</html>
